@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wisdomise.vn - Sharing Wisdom</title>
+    <title>Wisdomise - A Boutique IB & Fund Manager in Vietnam</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="logo">
-                <h1>Wisdomise.vn</h1>
+                <img src="images/wisdomise-logo.png" alt="Wisdomise Logo">
+                <h1>Wisdomise</h1>
             </div>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#partners">Partners</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -27,16 +32,32 @@
 
     <section id="hero">
         <div class="container">
-            <h1>Welcome to Wisdomise.vn</h1>
-            <p>Your source for wisdom and knowledge</p>
-            <a href="#learn-more" class="btn">Learn More</a>
+            <div class="hero-content">
+                <h1>A Boutique IB & Fund Manager in Vietnam</h1>
+                <div class="divider"></div>
+                <h2>Corporate Profile</h2>
+                <a href="#about" class="btn">Learn More</a>
+            </div>
+            <div class="photo-credit">
+                <p>Photo: gorealtravel.com</p>
+            </div>
         </div>
     </section>
 
     <section id="about">
         <div class="container">
             <h2>About Us</h2>
-            <p>Wisdomise.vn is dedicated to sharing wisdom and knowledge across various disciplines. Our mission is to help people grow, learn, and achieve their full potential.</p>
+            <p>Wisdomise is a boutique financial services firm based in Vietnam. With deep local expertise and global standards, we provide exceptional financial services to institutional clients and high-net-worth individuals.</p>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>Strategic Advisory</h3>
+                    <p>Comprehensive strategic advisory, mergers & acquisitions, and capital raising solutions tailored to the Vietnamese market.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Financial Expertise</h3>
+                    <p>Sophisticated financial solutions with a focus on adding value and delivering superior results in Vietnam's dynamic market.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -45,16 +66,44 @@
             <h2>Our Services</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Knowledge Sharing</h3>
-                    <p>Access to curated knowledge and insights from experts.</p>
+                    <h3>M&A Advisory</h3>
+                    <p>Comprehensive mergers and acquisitions services for both buy-side and sell-side transactions.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Mentorship</h3>
-                    <p>Connect with mentors in your field of interest.</p>
+                    <h3>Capital Markets</h3>
+                    <p>Equity and debt capital raising solutions including IPOs, private placements, and structured financing.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Learning Resources</h3>
-                    <p>High-quality resources to enhance your learning journey.</p>
+                    <h3>Fractional CFO</h3>
+                    <p>Expert financial leadership and strategic guidance providing sophisticated financial management with significant cost savings. Suitable for different phases of business growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="partners">
+        <div class="container">
+            <h2>The Partners</h2>
+            <div class="partners-grid">
+                <div class="partner-card">
+                    <div class="partner-image">
+                        <img src="images/partners/minh.png" alt="Minh Mai, CFA, MBA">
+                    </div>
+                    <div class="partner-info">
+                        <h3>Minh Mai, CFA</h3>
+                        <h4>Managing Partner</h4>
+                        <p>Extensive experience across buy side, sell side and corporate finance roles at leading firms including Vietbridge Capital, Fujiwara Capital, PAN Group, and Refico. Successfully secured over $100M in acquisition, greenfield and project financing. Specialized in Real Estate, Education and Technology sectors. Holds a Master's degree from ESCP Europe.</p>
+                    </div>
+                </div>
+                <div class="partner-card">
+                    <div class="partner-image">
+                        <img src="images/partners/khanh_cropped_more.webp" alt="Khanh Ngo, CFA, MA">
+                    </div>
+                    <div class="partner-info">
+                        <h3>Khanh Ngo, CFA</h3>
+                        <h4>Partner</h4>
+                        <p>CFO/CGO and Board Member at TIKI where he successfully raised over $250M across several funding rounds from global investors. Led the strategic acquisition of Tiketbox, Vietnam's #1 ticketing platform, and scaled TIKI's GMV beyond $1B. Previously served as Management Consultant at BCG (SEA), specializing in Financial Institution and CPG practice. Holds a Master's degree from Cambridge University and was recognized in the Forbes Asia 30 Under 30 list.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -64,10 +113,11 @@
         <div class="container">
             <h2>Contact Us</h2>
             <p>Have questions or want to learn more? Reach out to us!</p>
-            <form id="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
+            <form id="contact-form" action="mailto:minh@wisdomise.vn" method="post" enctype="text/plain">
+                <input type="hidden" name="subject" value="Website Inquiry">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
                 <button type="submit" class="btn">Send Message</button>
             </form>
         </div>
@@ -75,7 +125,14 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Wisdomise.vn. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>&copy; 2025 Wisdomise. All rights reserved.</p>
+                    <p>15 Le Thanh Ton Street, Ben Nghe Ward, District 1</p>
+                    <p>Sonatus Building, 2nd Floor</p>
+                    <p>Ho Chi Minh City, Vietnam</p>
+                </div>
+            </div>
         </div>
     </footer>
 

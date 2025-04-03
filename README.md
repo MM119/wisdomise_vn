@@ -36,3 +36,31 @@ The website is configured to use the custom domain `wisdomise.vn`. DNS configura
 
 - A Records pointing to GitHub Pages IP addresses
 - CNAME Record for www subdomain pointing to MM119.github.io
+
+## Color Palette
+
+The website uses the following color palette:
+
+```css
+:root {
+    --primary-color: #2A4E63;  /* Dark teal/blue - main brand color */
+    --secondary-color: #FFFFFF; /* White for contrast */
+    --accent-color: #CACACA;   /* Light gray accent */
+    --text-color: #333333;     /* Dark text */
+    --light-bg: #F5F5F5;       /* Light background */
+    --footer-color: #1F3A4A;   /* Darker teal for footer */
+}
+```
+
+### Color Usage Guidelines
+
+- Primary color (#2A4E63): Used for headers, backgrounds, and primary UI elements. Represents the professional corporate identity.
+- Secondary color (#FFFFFF): Used for text on dark backgrounds and as the main content background.
+- Text color (#333333): Used for body text to ensure readability.
+- Light background (#F5F5F5): Used for cards, service items, and secondary sections.
+- Footer color (#1F3A4A): Used for the footer area, a slightly darker version of the primary color.
+
+### Typography
+
+- Headings: Playfair Display (serif)
+- Body text: Raleway (sans-serif)
